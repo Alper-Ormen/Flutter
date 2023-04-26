@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todolist/Screens/todolist_db.dart';
 
-import 'Screens/todolist.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'My App',
       theme: ThemeData(primarySwatch: Colors.blue),
-     home: const Todolist(),
+     home: mysql(),
     );
   }
 }
