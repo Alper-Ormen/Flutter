@@ -1,5 +1,6 @@
  import 'package:flutter/material.dart';
  import 'package:todolist/Models/Todo.dart';
+import 'package:todolist/utils/drawer.dart';
 
  class Todolist extends StatefulWidget {
    const Todolist({super.key});
@@ -35,7 +36,7 @@
      return Scaffold(
        floatingActionButton: FloatingActionButton(
            onPressed: addTodo, child: const Icon(Icons.add)),
-       drawer: const Drawer(),
+       drawer: const MyDrawer(),
        appBar: AppBar(
          title: const Text('Todo List'),
          actions: const [
